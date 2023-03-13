@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import {  moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Dialog } from '@angular/cdk/dialog';
 import { TodoDialogComponent } from '../../components/todo-dialog/todo-dialog.component';
 
@@ -26,17 +26,16 @@ import { Task, Column } from '../../models/task.model';
 
     .scrollbar::-webkit-scrollbar-track {
       border-radius: 100vh;
-      background: #8f9193;
+      background: rgb( 85, 85, 85, 0.5);
     }
 
     .scrollbar::-webkit-scrollbar-thumb {
-      background: #c5c6c7;
+      background: rgb( 215, 215, 215, 0.6);
       border-radius: 100vh;
     }
 
     .scrollbar::-webkit-scrollbar-thumb:hover {
-      background: #cfd0d1;
-      border: 2px solid #dcdcdd;
+      background: rgb( 225, 225, 225, 0.7);
     }
     `
   ]
@@ -54,7 +53,7 @@ export class BoardComponent {
         },
         {
           id: '856',
-          name: 'Llorar con la llorana'
+          name: 'Saltar la cuerda'
         },
       ]
     },
@@ -80,11 +79,11 @@ export class BoardComponent {
         },
         {
           id: '856',
-          name: 'Saltar a la cuerda'
+          name: 'Visitar la biblioteca'
         },
         {
           id: '792',
-          name: 'Mover el bote'
+          name: 'Quitar la basura'
         },
       ]
     }

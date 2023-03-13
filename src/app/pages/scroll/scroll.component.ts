@@ -1,13 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { Product } from '../../models/product.model';
 
-interface Product {
-  id: string;
-  title: string;
-  price: number;
-  images: string[];
-}
 @Component({
   selector: 'app-scroll',
   templateUrl: './scroll.component.html'
